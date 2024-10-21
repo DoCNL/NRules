@@ -9,8 +9,8 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Run AI Code Review
-        uses: samuelmeuli/action-ai-review@v1
+      - name: AI Code Review Action
+        uses: freeedcom/ai-codereviewer@v2.7.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # Optional: To specify code directory. Defaults to root folder
